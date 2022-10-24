@@ -18,10 +18,28 @@ FROM players
 GROUP BY player_name
 
 
-
 -- COUNT / SUM(points) by player_name
 
 SELECT SUM(points)
 FROM careers
 WHERE player_name;
 
+
+-- Broad logic questions used to write queries for data selection
+
+
+-- From MySQL scratchfile:
+
+SELECT player_name, points
+FROM people;
+
+SELECT *
+FROM people;
+
+SELECT *
+FROM people
+LIMIT 25;
+
+SELECT *
+FROM people
+LIMIT 5;
