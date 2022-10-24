@@ -2,7 +2,7 @@ README.md Group Project
 
 # NBA player data, including advanced statistics, seasons 1996-2021
 * Thanks to Kaggle page for nicely arranged source dataset:
-* Kaggle user: Justinas Cirtautas <a href:"https://www.kaggle.com/datasets/justinas/nba-players-data" alt: "link to author's data and description"/>https://www.kaggle.com/datasets/justinas/nba-players-data</a>
+[https://www.kaggle.com/datasets/justinas/nba-players-data/](https://www.kaggle.com/datasets/justinas/nba-players-data/)
 
 ### Authors
 * Ekene Emenanjor
