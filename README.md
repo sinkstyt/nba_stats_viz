@@ -1,9 +1,13 @@
 README.md Group Project
 
 # NBA player data, including advanced statistics, seasons 1996-2021
+* Thanks to Kaggle page for nicely arranged source dataset:
+* Kaggle user: Justinas Cirtautas <a href:"https://www.kaggle.com/datasets/justinas/nba-players-data" alt: "link to author's data and description"/>https://www.kaggle.com/datasets/justinas/nba-players-data</a>
 
 ### Authors
-Ekene 
+* Ekene Emenanjor
+* Sohum Patel
+* Tyler Sinks
 
 # A quick look at visual answers to questions like:
 1. Could net rating be used as a predictor for Championship Wins / Dynasties?
@@ -47,3 +51,55 @@ GPL 2.0+
 
 ## Contact
 
+
+-- Broad logic questions used to write queries for data selection
+
+
+From MySQL scratchfile:
+
+
+SELECT player_name, points
+FROM people;
+
+SELECT *
+FROM people;
+
+SELECT *
+FROM people
+LIMIT 25;
+
+SELECT *
+FROM people
+LIMIT 5;
+
+
+1. points over the course / career
+-- SQL query in order to make an inset table for points scrutiny
+
+SELECT "player_name, points (by season)"
+
+
+>> return *only* the top 25 . Consider checks for outlier years.
+
+--> filter reassigned to select top 5
+
+
+
+>> capture the median 25 players for medi*ocrity* across entire career
+
+>> Anyway, besides designing a NEW statistic, talk about controlling for pace
+>> across season --> which team by decade showed the widest variations IN PACE?
+
+2. net rating predicts championships?
+
+3. net rating individual varying widely against own team's
+
+4. How is hockey's +/- different from NBA's net rating?
+
+5. 
+
+# # Problems with the data:
+1. cleaning required?
+2. table creation
+3. vizualizations, plots, graphs
+4. 
