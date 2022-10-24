@@ -5,9 +5,9 @@ README.md Group Project
 [https://www.kaggle.com/datasets/justinas/nba-players-data/](https://www.kaggle.com/datasets/justinas/nba-players-data/)
 
 ### Authors
-* Ekene Emenanjor
-* Sohum Patel
-* Tyler Sinks
+* Ekene Emenanjor [https://github.com/EkeneE123](https://github.com/EkeneE123)
+* Sohum Patel [https://github.com/Sohum7](https://github.com/Sohum7)
+* Tyler Sinks [https://github.com/sinkstyt](https://github.com/sinkstyt)
 
 # A quick look at visual answers to questions like:
 1. Could net rating be used as a predictor for Championship Wins / Dynasties?
@@ -19,58 +19,49 @@ README.md Group Project
 5. 
 
 ### Some Sample Queries (SQL)
+1. SELECT `everything`
+
 ```
 SELECT *
 FROM players;
+```
+2. SELECT all players by name, index by 1) name, 2) team '_abbreviation'
+and
+ORDER by timeline ('season')
+```
+SELECT DISTINCT player_name,
+FROM players
+GROUP BY player_name, team_abbreviation
+ORDER BY season;
+```
 
-// Sort by total career points
+3. Sort by total career points
+```
+SQL code <HERE>
 
-// Sort by total career points and compare against any changes in pace throughout season?
 
-// 
+```
 
-# Are we going to put the whole database in one table?
-# Yes, for now
-<!-- 1. I think we can show each of the relationships we're hoping to show via dashboard in Tableau Public
+4. Sort by total career points AND
+compare against any changes in pace throughout season?
+```
+
+SQL snippet here
+
+```
+
+5. Consider how to render graphs / visualizations via Tablueau Public
 * including:
 >> Does net rating lead to championships?
 >> Height against act% -- what IS act%
->> 5 medians from every unique catagetory... "like looking for the
->> >> mediocre-IST of the NBA - year to year"
->>
->>
->>
-2. What about the documentation?
-* git commits not required?
-* shared repo
-*   -->
+>> 5 medians from every unique catagetory... "like looking for the most mediocre of the NBA year by year
+>> >> any repeats in the mediocres?
 
 ## License
 GPL 2.0+
 
 
 ## Contact
-
-
--- Broad logic questions used to write queries for data selection
-
-
-From MySQL scratchfile:
-
-
-SELECT player_name, points
-FROM people;
-
-SELECT *
-FROM people;
-
-SELECT *
-FROM people
-LIMIT 25;
-
-SELECT *
-FROM people
-LIMIT 5;
 
 
 1. points over the course / career
@@ -82,8 +73,6 @@ SELECT "player_name, points (by season)"
 >> return *only* the top 25 . Consider checks for outlier years.
 
 --> filter reassigned to select top 5
-
-
 
 >> capture the median 25 players for medi*ocrity* across entire career
 
@@ -98,8 +87,7 @@ SELECT "player_name, points (by season)"
 
 5. 
 
-# # Problems with the data:
+# # Problems with the data? Cleaning reccommended?
 1. cleaning required?
 2. table creation
 3. vizualizations, plots, graphs
-4. 
